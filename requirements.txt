@@ -1,0 +1,2 @@
+# PyReact is needed to make include_transformed_jsx bundler processor work.
+PyReact==0.6.0

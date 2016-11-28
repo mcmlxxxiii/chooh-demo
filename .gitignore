@@ -1,0 +1,4 @@
+venv/
+.ddocs/
+*.pyc
+chooh.yaml
