@@ -1,8 +1,17 @@
-databases:
-    development:
-        server: http://admin:password@127.0.0.1:5984
-        db_name: chooh-demo-dummy
+servers:
+    development: http://user:password@127.0.0.1:5984
+    production: https://superuser:superpassword@production.com
 
+deployments:
+    development:
+        pushes:
+            - ddoc: chooh_demo
+              target_database: development/chooh-demo-dummy
+        config:
+            debug: YES
     production:
-        server: http://admin:password@127.0.0.1:5984
-        db_name: chooh-demo-genius
+        pushes:
+            - ddoc: chooh_demo
+              target_database: development/chooh-demo-genius
+        config:
+            debug: NO

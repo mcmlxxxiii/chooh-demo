@@ -57,13 +57,13 @@ yet work well with all of the Python version.
 8. Push the design document with the demo application to a configured CouchDB
 database:
     ```
-    chooh push ddoc chooh_demo development
+    chooh deploy development
     ```
 
 9. Voila! This is it. Now, find the app in your CouchDB.
 
     If you pushed this demo to a CouchDB installation on your local machine and
     what you changed in _chooh.yaml_ is just user's credentials, then the url
-    you can reach the app at should be as follows.
+    you can reach the app at should probably be as follows.
 
     http://127.0.0.1:5984/chooh-demo-dummy/_design/chooh_demo/index.html
